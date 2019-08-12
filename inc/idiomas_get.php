@@ -22,25 +22,25 @@
 		  </a>
 		  <ul class="dropdown-menu pull-right">
 		    <li>
-		      <a href="?idioma=br">
+		      <a href="?ID=<?php echo $_GET['ID']; ?>&idioma=br">
 		        <img style="width: 16px; height: auto" src="img/br.png" />
 		        <span>Português</span>
 		      </a>
 		    </li>
 		    <li class="active">
-		      <a href="?idioma=us">
+		      <a href="?ID=<?php echo $_GET['ID']; ?>&idioma=us">
 		        <img style="width: 16px; height: auto" src="img/us.png" />
 		        <span>English</span>
 		      </a>
 		    </li>
 		    <li>
-		      <a href="?idioma=es">
+		      <a href="?ID=<?php echo $_GET['ID']; ?>&idioma=es">
 		        <img style="width: 16px; height: auto" src="img/es.png" />
 		        <span>Español</span>
 		      </a>
 		    </li>
 		    <li>
-		      <a href="?idioma=fr">
+		      <a href="?ID=<?php echo $_GET['ID']; ?>&idioma=fr">
 		        <img style="width: 16px; height: auto" src="img/fr.png" />
 		        <span>François</span>
 		      </a>

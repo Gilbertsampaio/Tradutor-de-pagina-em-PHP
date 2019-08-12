@@ -3,7 +3,7 @@ session_start();
 
 if(!isset($_GET['idioma']) && !isset($_SESSION['idioma'])){
 
-    $_SESSION['idioma'] = 'pt-br';
+    $_SESSION['idioma'] = 'br';
 
     include 'idiomas/'.$_SESSION['idioma'].'.php';
     
