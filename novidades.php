@@ -24,7 +24,8 @@ $sql = mysqli_query($connect,"SELECT * FROM novidade ORDER BY ID DESC");
 if(mysqli_num_rows($sql) > 0){
 while($ln = mysqli_fetch_object($sql)):
 ?>
-<div style="background-color: #d5d5d5; padding: 20px 20px 20px 20px">
+<hr/>
+<div style="background-color: rgba(0, 0, 0, 0.1); padding: 20px 20px 20px 20px">
 			<a class="btn btn-primary pull-right" role="button" href="editar.php?ID=<?php echo $ln->ID; ?>">Alterar</a>
 
 			<h3><?php echo $trad['titulonovidade'];?>: <?php echo $ln->$titulo; ?></h3>
