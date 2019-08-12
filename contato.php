@@ -31,7 +31,9 @@ include('tradutor.php');
 			    <label for="mensagem"><?php echo $trad['labelmensagem'];?></label>
 			    <textarea class="form-control" id="mensagem" rows="3" placeholder="<?php echo $trad['labelmensagem'];?>"></textarea>
 			  </div>
-			  
+			  <div class="form-group">
+			    <button name="enviar" type="submit"  id="enviar" tabindex="5" class="btn btn-primary"><?php echo $trad['botaocontato'];?></button>
+			  </div>
 			</form>
 		</div>
 	</body>

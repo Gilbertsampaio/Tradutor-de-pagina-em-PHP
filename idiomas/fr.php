@@ -26,6 +26,7 @@ $trad['textonewcadastro'] = "Formulaire d'inscription aux nouvelles.";
 $trad['textoneweditar'] = 'Formulaire de changement de nouveauté.';
 $trad['botaonewcadastro'] = "S'inscrire Nouveau";
 $trad['botaoeditar'] = 'Enregistrer les modifications';
+$trad['botaocontato'] = 'Envoyer un message';
 $trad['labeltitulobr'] = 'Titre portugais';
 $trad['labeltitulous'] = 'Titre anglais';
 $trad['labeltituloes'] = 'Titre espagnol';
