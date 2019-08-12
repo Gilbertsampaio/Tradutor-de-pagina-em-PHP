@@ -15,7 +15,7 @@ include('inc/lista_new.php');
 		<?php include 'inc/idiomas.php'; ?>
 		<?php include 'inc/menu.php'; ?>
 		<div class="content">
-			<span class="pull-right"><a class="btn btn-primary" role="button" href="add.php">Adicionar Novidade</a></span>
+			<span class="pull-right"><a class="btn btn-success" role="button" href="add.php">Adicionar Novidade</a></span>
 			<h2><?php echo $trad['textonovidades'];?></h2>
 <?php
 $sql = mysqli_query($connect,"SELECT * FROM novidade ORDER BY ID DESC");
@@ -26,6 +26,7 @@ while($ln = mysqli_fetch_object($sql)):
 ?>
 <hr/>
 <div style="background-color: rgba(0, 0, 0, 0.1); padding: 20px 20px 20px 20px">
+			<a class="btn btn-danger pull-right" role="button" href="excluir.php?ID=<?php echo $ln->ID; ?>">Excluir</a>
 			<a class="btn btn-primary pull-right" role="button" href="editar.php?ID=<?php echo $ln->ID; ?>">Alterar</a>
 
 			<h3><?php echo $trad['titulonovidade'];?>: <?php echo $ln->$titulo; ?></h3>

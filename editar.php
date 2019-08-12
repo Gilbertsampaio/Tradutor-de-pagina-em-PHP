@@ -78,7 +78,7 @@ if(isset($_POST["salvar"])){
 			    <textarea type="text" name="texto_fr" id="texto_fr" tabindex="3" class="form-control" rows="3" placeholder="<?php echo $trad['labeltextofr'];?>"><?php echo $ln->texto_fr; ?></textarea>
 			  </div>
 			  <div class="form-group">
-			    <button name="salvar" type="submit"  id="salvar" tabindex="5" class="btn btn-primary"><?php echo $trad['botaoeditar'];?></button>
+			    <button name="salvar" type="submit"  id="salvar" tabindex="5" class="btn btn-success"><?php echo $trad['botaoeditar'];?></button>
 			  </div>
 			  
 			</form>
