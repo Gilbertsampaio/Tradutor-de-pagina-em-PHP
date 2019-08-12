@@ -35,4 +35,7 @@ $trad['labeltextobr'] = 'Description en portugais';
 $trad['labeltextous'] = 'Description en anglais';
 $trad['labeltextoes'] = 'Description en espagnol';
 $trad['labeltextofr'] = 'Description en français';
+$trad['botaoadd'] = 'Ajouter';
+$trad['botaoalterar'] = 'Changement';
+$trad['botaoexcluir'] = 'Exclure';
 ?>
