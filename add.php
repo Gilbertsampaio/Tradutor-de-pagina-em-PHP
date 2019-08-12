@@ -24,8 +24,8 @@ require_once('config/imagem.php');
 	$sql = mysqli_query($connect,"INSERT INTO novidade (data, titulo_br, titulo_us, titulo_es, titulo_fr, texto_br, texto_us, texto_es, texto_fr, foto, status) VALUES ('$data', '$titulo', '', '', '', '$texto', '', '', '', '$verifica[caminho]', 'Inativo')");
 
 
-	echo '<script language="JavaScript">window.location="add.php";</script>';
-	$_SESSION['success_msg'] = "As Informações da Notícia foram cadastradas com sucesso!";
+	echo '<script language="JavaScript">window.location="novidades.php";</script>';
+	$_SESSION['success_msg'] = "<div class='alert alert-success' role='alert'>A Novidade <b>foi cadastrada</b> com sucesso!</div>";
 }	
 
 }	

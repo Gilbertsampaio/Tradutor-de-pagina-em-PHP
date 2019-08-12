@@ -15,6 +15,11 @@ include('inc/lista_new.php');
 		<?php include 'inc/idiomas.php'; ?>
 		<?php include 'inc/menu.php'; ?>
 		<div class="content">
+			
+<?php if(!empty($_SESSION['success_msg'])){?>
+<?php echo $_SESSION['success_msg'];?>											
+<?php unset($_SESSION['success_msg']);}?>  
+
 			<span class="pull-right"><a class="btn btn-success" role="button" href="add.php">Adicionar Novidade</a></span>
 			<h2><?php echo $trad['textonovidades'];?></h2>
 <?php

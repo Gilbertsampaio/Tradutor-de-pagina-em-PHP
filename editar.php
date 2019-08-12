@@ -27,7 +27,7 @@ if(isset($_POST["salvar"])){
 	
 		echo '<script language="JavaScript">window.location="novidades.php";</script>';
 
-	$_SESSION['success_msg'] = "As Informações foram alteradas com sucesso!";
+		$_SESSION['success_msg'] = "<div class='alert alert-success' role='alert'>As Informações <b>foram alteradas</b> com sucesso!</div>";
 
 }
 ?>
