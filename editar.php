@@ -7,7 +7,7 @@ include "conexao.php";
 ?>
 <?php 
 $ID = mysqli_real_escape_string($connect,$_GET['ID']);
-$ln = mysqli_fetch_object(mysqli_query($connect,"SELECT * FROM news WHERE ID = '$ID'"));
+$ln = mysqli_fetch_object(mysqli_query($connect,"SELECT * FROM novidade WHERE ID = '$ID'"));
 ?>	
 
  <?php 
@@ -23,7 +23,7 @@ if(isset($_POST["salvar"])){
 		$texto_es = mysqli_real_escape_string($connect,$_POST["texto_es"]);
 		$texto_fr = mysqli_real_escape_string($connect,$_POST["texto_fr"]);
 			
-	mysqli_query($connect,"UPDATE news SET titulo_br = '$titulo_br', titulo_us = '$titulo_us', titulo_es = '$titulo_es', titulo_fr = '$titulo_fr', texto_br = '$texto_br', texto_us = '$texto_us', texto_es = '$texto_es', texto_fr = '$texto_fr' WHERE ID = '$ID'");
+	mysqli_query($connect,"UPDATE novidade SET titulo_br = '$titulo_br', titulo_us = '$titulo_us', titulo_es = '$titulo_es', titulo_fr = '$titulo_fr', texto_br = '$texto_br', texto_us = '$texto_us', texto_es = '$texto_es', texto_fr = '$texto_fr' WHERE ID = '$ID'");
 	
 		echo '<script language="JavaScript">window.location="novidades.php";</script>';
 

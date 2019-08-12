@@ -1,23 +1,5 @@
 <?php 
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-//$connect=mysqli_connect('mysql.cfcequador.com.br','cfcequadorcomb2','gmos7380','cfcequadorcomb2');
-//$connect=mysqli_connect('mysql.motelleblon.com','motellebloncom','gmos7380','motellebloncom');
-$url='http://localhost/tradutor';
-//$url='http://www.carlospiller.adv.br';
-
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-$symbian =  strpos($_SERVER['HTTP_USER_AGENT'],"Symbian");
-
-if ($iphone || $ipad || $android || $palmpre || $ipod || $berry || $symbian == true) {
-$dispositivo='api';
-} else {
-$dispositivo='web';
-}
 
 $connect=mysqli_connect('localhost','root','','idiomas');
 

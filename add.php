@@ -21,7 +21,7 @@ require_once('config/imagem.php');
 		$texto = mysqli_real_escape_string($connect,$_POST["texto_br"]);
 		$data = date('d/m/Y');
 	
-	$sql = mysqli_query($connect,"INSERT INTO news (data, titulo_br, titulo_us, titulo_es, titulo_fr, texto_br, texto_us, texto_es, texto_fr, foto, status) VALUES ('$data', '$titulo', '', '', '', '$texto', '', '', '', '$verifica[caminho]', 'Inativo')");
+	$sql = mysqli_query($connect,"INSERT INTO novidade (data, titulo_br, titulo_us, titulo_es, titulo_fr, texto_br, texto_us, texto_es, texto_fr, foto, status) VALUES ('$data', '$titulo', '', '', '', '$texto', '', '', '', '$verifica[caminho]', 'Inativo')");
 
 
 	echo '<script language="JavaScript">window.location="add.php";</script>';

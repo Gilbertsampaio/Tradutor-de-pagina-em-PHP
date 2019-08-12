@@ -18,7 +18,7 @@ include('inc/lista_new.php');
 			<span class="pull-right"><a class="btn btn-primary" role="button" href="add.php">Adicionar Novidade</a></span>
 			<h2><?php echo $trad['textonovidades'];?></h2>
 <?php
-$sql = mysqli_query($connect,"SELECT * FROM news ORDER BY ID DESC");
+$sql = mysqli_query($connect,"SELECT * FROM novidade ORDER BY ID DESC");
 ?>
 <?php 
 if(mysqli_num_rows($sql) > 0){

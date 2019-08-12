@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `news`
+-- Estrutura da tabela `novidade`
 --
 
-CREATE TABLE `news` (
+CREATE TABLE `novidade` (
   `ID` int(11) NOT NULL,
   `data` varchar(255) NOT NULL,
   `foto` varchar(255) NOT NULL,
@@ -42,10 +42,10 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `news`
+-- Extraindo dados da tabela `novidade`
 --
 
-INSERT INTO `news` (`ID`, `data`, `foto`, `titulo_br`, `titulo_us`, `titulo_es`, `titulo_fr`, `texto_br`, `texto_us`, `texto_es`, `texto_fr`, `status`) VALUES
+INSERT INTO `novidade` (`ID`, `data`, `foto`, `titulo_br`, `titulo_us`, `titulo_es`, `titulo_fr`, `texto_br`, `texto_us`, `texto_es`, `texto_fr`, `status`) VALUES
 (2, '11/08/2019', '42c303ffff14a32f2625453244ad5264.jpg', 'Dia dos Pais', 'Father''s Day', 'Día de los padres', 'Fête des pères', 'Eu quero parabenizar à todos os pais do Brasil.', 'I want to congratulate all the parents in Brazil.', 'Quiero felicitar a todos los padres en Brasil.', 'Je tiens à féliciter tous les parents au Brésil.', 'Inativo');
 
 --
@@ -53,9 +53,9 @@ INSERT INTO `news` (`ID`, `data`, `foto`, `titulo_br`, `titulo_us`, `titulo_es`,
 --
 
 --
--- Indexes for table `news`
+-- Indexes for table `novidade`
 --
-ALTER TABLE `news`
+ALTER TABLE `novidade`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -63,9 +63,9 @@ ALTER TABLE `news`
 --
 
 --
--- AUTO_INCREMENT for table `news`
+-- AUTO_INCREMENT for table `novidade`
 --
-ALTER TABLE `news`
+ALTER TABLE `novidade`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
