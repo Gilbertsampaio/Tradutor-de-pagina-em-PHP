@@ -58,7 +58,7 @@ require_once('config/imagem.php');
 			    <textarea type="text" name="texto_br" id="texto_br" tabindex="3" class="form-control" rows="3" placeholder="<?php echo $trad['labelnewtexto'];?>"></textarea>
 			  </div>
 			  <div class="form-group">
-			    <button name="enviar" type="submit"  id="enviar" tabindex="5" class="btn btn-success btn-md"><?php echo $trad['botaonewcadastro'];?></button>
+			    <button name="enviar" type="submit"  id="enviar" tabindex="5" class="btn btn-primary"><?php echo $trad['botaonewcadastro'];?></button>
 			  </div>
 			  
 			</form>
